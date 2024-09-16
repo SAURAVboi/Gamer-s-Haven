@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gamer's Haven</h1>
+            <p>Unite, Share, and Dominate the Gaming World!</p>
+        </header>
+
+        <section class="upload-section">
+            <h2>Upload Game Files</h2>
+            <form id="fileUploadForm">
+                <label for="gameFile">Choose Game File (ZIP):</label>
+                <input type="file" id="gameFile" accept=".zip" required>
+                <button type="submit">Upload File</button>
+            </form>
+        </section>
+
+        <section class="upload-section">
+            <h2>Upload Your Gameplay Screenshots</h2>
+            <form id="imageUploadForm">
+                <label for="gameImage">Choose Image File (PNG, JPG):</label>
+                <input type="file" id="gameImage" accept="image/png, image/jpeg" required>
+                <button type="submit">Upload Image</button>
+            </form>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Gameplay Screenshots Gallery</h2>
+            <div id="gallery"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
